@@ -15,28 +15,28 @@ const Tab = createBottomTabNavigator();
 const icons = {
   Home: {
     lib: AntDesign,
-  name: 'home',
+    name: 'home',
   },
   Wallet: {
     lib: AntDesign,
-  name: 'creditcard',
+    name: 'creditcard',
   },
   Notifications: {
     lib: Ionicons,
-  name: 'ios-notifications-outline',
+    name: 'ios-notifications-outline',
   },
   Settings: {
     lib: AntDesign,
-  name: 'setting',
+    name: 'setting',
   },
 }
 
 export default function Navigation() {
   return (
     <Tab.Navigator
-    initialRouteName="Wallet"
+      initialRouteName="Pay"
       screenOptions={({ route, navigation }) => ({
-        tabBarIcon: ({ color, size, focused }) =>{
+        tabBarIcon: ({ color, size, focused }) => {
           if (route.name === 'Pay') {
             return <PayButton
               onPress={() => navigation.navigate('Pay')}
@@ -92,5 +92,6 @@ export default function Navigation() {
         }}
       />
     </Tab.Navigator>
+
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MaterialCommunityIcons, AntDesign, Feather,  } from '@expo/vector-icons';
+import { MaterialCommunityIcons, AntDesign, Feather, } from '@expo/vector-icons';
 
 import {
   Wrapper,
@@ -52,32 +52,32 @@ export default function Home() {
 
         <PaymentedContainer>
           <PaymentedDescription>
-          <PaymentedImg source={img6} resizeMode="contain" />
-          <PaymentedLabel>
-            Você pagou um boleto
+            <PaymentedImg source={img6} resizeMode="contain" />
+            <PaymentedLabel>
+              Você pagou um boleto
           </PaymentedLabel>
           </PaymentedDescription>
           <PaymentedFooter>
-          <Details>
-            <Value>R$ 59,39</Value>
+            <Details>
+              <Value>R$ 59,39</Value>
 
-            <Divider />
+              <Divider />
 
-            <Feather name="lock" color="rgba(255, 255, 255, 0.5)" size={14} />
-            <Date>há 28 dias</Date>
-          </Details>
+              <Feather name="lock" color="rgba(255, 255, 255, 0.5)" size={14} />
+              <Date>há 28 dias</Date>
+            </Details>
 
-          <Actions>
-            <Option>
-              <MaterialCommunityIcons name="comment-outline" size={14} color="#fff" />
-              <OptionLabel>0</OptionLabel>
-            </Option>
+            <Actions>
+              <Option>
+                <MaterialCommunityIcons name="comment-outline" size={14} color="#fff" />
+                <OptionLabel>0</OptionLabel>
+              </Option>
 
-            <Option>
-              <AntDesign name="heart" size={14} color="#1ab563" />
-              <OptionLabel>1</OptionLabel>
-            </Option>
-          </Actions>
+              <Option>
+                <AntDesign name="heart" size={14} color="#1ab563" />
+                <OptionLabel>1</OptionLabel>
+              </Option>
+            </Actions>
           </PaymentedFooter>
         </PaymentedContainer>
 

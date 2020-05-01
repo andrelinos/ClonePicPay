@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Switch } from 'react-native';
-import { Feather, FontAwesome, Ionicons } from '@expo/vector-icons';
+import { Feather, FontAwesome, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 
 import {
   Container,
@@ -28,7 +28,9 @@ import {
   CardAddIcon,
   CardAddLabel,
   CardImg,
-
+  PromotionalCode,
+  PromotionalCodeLabel,
+  PromotionalCodeButton,
 } from './styles';
 
 import creditCard from '../../assets/credit-card.png';
@@ -37,32 +39,30 @@ export default function Wallet(props) {
   const [isValueVisible, setIsValueVisible] = useState(true)
   const [isEnabled, setIsEnabled] = useState(false);
 
-  console.log(isValueVisible);
-
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
   return (
     <Container>
-      <Header colors={isEnabled ? ['#52e78c', '#1ab563'] : ['#a4b0be', '#747d8c'] }>
+      <Header colors={isEnabled ? ['#52e78c', '#1ab563'] : ['#a4b0be', '#747d8c']}>
         <HeaderContainer>
           <Title>Saldo PicPay</Title>
           <BalanceContainer>
 
             <Value>
-            R$
+              R$
             </Value>
             {isValueVisible
-                  ? <Bold>0,00</Bold>
-                  : <BoldHide>
-                    </BoldHide>
-                }
+              ? <Bold>0,00</Bold>
+              : <BoldHide>
+              </BoldHide>
+            }
             <EyeButton
               onPress={() => setIsValueVisible(isValueVisible => !isValueVisible)}
             >
-             {isValueVisible
-             ? <Feather name="eye" size={28} color="#fff" />
-             : <Feather name="eye-off" size={28} color="#fff" />
-             }
+              {isValueVisible
+                ? <Feather name="eye" size={28} color="#fff" />
+                : <Feather name="eye-off" size={28} color="#fff" />
+              }
             </EyeButton>
           </BalanceContainer>
 
@@ -124,6 +124,12 @@ export default function Wallet(props) {
           <CardImg source={creditCard} resizeMode="contain" />
         </Card>
 
+        <PromotionalCode>
+          <PromotionalCodeButton>
+            <MaterialCommunityIcons name="cash-100" size={37} color="#1ab563" />
+            <PromotionalCodeLabel>Usar código promocional</PromotionalCodeLabel>
+          </PromotionalCodeButton>
+        </PromotionalCode>
 
       </PaymentMethods>
     </Container>

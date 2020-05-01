@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   background: #000;
   flex: 1;
 `;
@@ -166,4 +166,25 @@ export const CardImg = styled.Image`
   width: 75px;
 `;
 
+export const PromotionalCode = styled.View`
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+`;
+
+export const PromotionalCodeButton = styled.TouchableOpacity`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const PromotionalCodeLabel = styled.Text`
+  color: #1ab563;
+  font-size: 14px;
+  margin-left: 8px;
+  `;
 
