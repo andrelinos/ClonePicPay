@@ -11,7 +11,7 @@ export const Container = styled.ScrollView.attrs(() => ({
   background: #1e222b;
   height: 130px;
   padding-bottom: 10px;
-  border-bottom-width: 0.5;
+  border-bottom-width: .5px;
   border-color: #999;
 `;
 

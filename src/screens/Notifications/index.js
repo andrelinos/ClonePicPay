@@ -101,7 +101,13 @@ export default function Notifications() {
           <Footer>
               <Date>{item.date}</Date>
               <ButtonFollow>
-                <ImgFollow> <AntDesign name="addusergroup" size={16} color="#10c86e"></AntDesign> </ImgFollow>
+                <ImgFollow>
+                  <AntDesign
+                    name="addusergroup"
+                    size={16}
+                    color="#10c86e">
+                  </AntDesign>
+                </ImgFollow>
               <TextFollow>Seguir</TextFollow>
               </ButtonFollow>
             </Footer>

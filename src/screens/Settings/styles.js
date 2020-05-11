@@ -64,7 +64,7 @@ export const Description = styled.Text`
   font-size: 10px;
   padding-bottom: 8px;
   margin-bottom: 8px;
-  border-bottom-width: .5px;
+  border-bottom-width: 0.5px;
   border-color: #999;
   border-style: solid;
 `;
