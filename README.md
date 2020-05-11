@@ -4,9 +4,13 @@
 
 ## Sobre
 Projeto desenvolvido usando:
+
 [Expo](https://expo.io/)
+
 [React Navigation](https://reactnavigation.org/)
+
 [React Native](https://reactnative.dev/)
+
 
 ## Baixe o projeto
 Abra seu terminal e faça um clone do pojeto usando o comando abaixo:
