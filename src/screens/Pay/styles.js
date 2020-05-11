@@ -1,8 +1,12 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-
+  background: #eee;
 `;
+
+export const ContainerItems = styled.ScrollView.attrs(() => ({
+  showsVerticalScrollIndicator: false,
+}))``;
 
 export const Header = styled.View`
   flex-direction: row;
@@ -34,9 +38,7 @@ export const Search = styled.TextInput.attrs({
   margin-left: 8px;
 `;
 
-export const IconSearchPay = styled.View`
-
-`;
+export const IconSearchPay = styled.View``;
 export const PaymentedImg = styled.Image`
   width: 42px;
 `;

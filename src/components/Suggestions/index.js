@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Option, Img, Label } from './styles';
+import { Container, Title, Option, Img, Label } from './styles';
 
 import img1 from '../../assets/01.png';
 import img2 from '../../assets/02.png';
@@ -50,13 +50,16 @@ const items = [
 
 export default function Suggestions() {
   return (
-    <Container>
-      {items.map((item) => (
-        <Option key={item.key}>
-          <Img source={item.img} />
-          <Label>{item.label}</Label>
-        </Option>
-      ))}
-    </Container>
+    <>
+      <Title>Sugestões para Você</Title>
+      <Container>
+        {items.map((item) => (
+          <Option key={item.key}>
+            <Img source={item.img} />
+            <Label>{item.label}</Label>
+          </Option>
+        ))}
+      </Container>
+    </>
   );
 }

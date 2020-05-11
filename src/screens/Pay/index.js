@@ -1,16 +1,19 @@
 import React from 'react';
-import { MaterialCommunityIcons, EvilIcons } from '@expo/vector-icons';
-
-import TabsNavigation from '../Pay/Tabs';
+import { MaterialCommunityIcons, EvilIcons, Feather, AntDesign } from '@expo/vector-icons';
 
 import {
   Container,
+  ContainerItems,
   Header,
-  PaymentedImg,
   SearchContainer,
   Search,
   IconSearchPay,
+
 } from './styles';
+
+import Suggestions from '../../components/Suggestions';
+import Contacts from '../../components/Contacts';
+import ServicesPay from '../../components/ServicesPay';
 
 import img6 from '../../assets/06.png';
 
@@ -29,8 +32,11 @@ export default function Pay() {
         </SearchContainer>
 
       </Header>
-
-      <TabsNavigation />
+      <ContainerItems>
+        <Suggestions />
+        <ServicesPay />
+        <Contacts />
+      </ContainerItems>
     </Container>
   );
 }

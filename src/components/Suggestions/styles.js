@@ -10,6 +10,18 @@ export const Container = styled.ScrollView.attrs(() => ({
 }))`
   background: #1e222b;
   height: 130px;
+  padding-bottom: 10px;
+  border-bottom-width: 0.5;
+  border-color: #999;
+`;
+
+export const Title = styled.Text `
+  width: 100%;
+  background: #1e222b;
+  color: #fff;
+  text-align: left;
+  padding: 15px 15px 0 15px;
+  margin: 0;
 `;
 
 export const Option = styled.TouchableOpacity`
