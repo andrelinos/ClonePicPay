@@ -40,7 +40,6 @@ export const PaymentedContainer = styled.View`
 export const PaymentedDescription = styled.View`
   flex-direction: row;
   align-items: center;
-
 `;
 export const PaymentedImg = styled.Image`
   width: 42px;

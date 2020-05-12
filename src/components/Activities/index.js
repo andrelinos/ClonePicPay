@@ -55,7 +55,11 @@ export default function Activities() {
 
           <Actions>
             <Option>
-              <MaterialCommunityIcons name="comment-outline" size={14} color="#fff" />
+              <MaterialCommunityIcons
+                name="comment-outline"
+                size={14}
+                color="#fff"
+              />
               <OptionLabel>0</OptionLabel>
             </Option>
 

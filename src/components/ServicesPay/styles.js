@@ -3,16 +3,16 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   margin-top: 25px;
   background: #1e232a;
-  margin-top: .5px;
+  margin-top: 0.5px;
   padding: 15px;
 `;
 
-export const Service = styled.View `
+export const Service = styled.View`
   flex-direction: row;
   height: 60px;
 `;
 
-export const Title = styled.Text `
+export const Title = styled.Text`
   width: 100%;
   color: #fff;
   text-align: left;
@@ -29,7 +29,6 @@ export const Details = styled.View`
   padding-left: 10px;
 `;
 
-
 export const TitleService = styled.Text`
   color: #fff;
   font-size: 11px;
@@ -41,7 +40,7 @@ export const Description = styled.Text`
   margin-top: 5px;
 `;
 
-export const Menu = styled.Text `
+export const Menu = styled.Text`
   color: #fff;
   transform: rotate(90deg);
   font-size: 18px;

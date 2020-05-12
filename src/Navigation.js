@@ -29,7 +29,7 @@ const icons = {
     lib: AntDesign,
     name: 'setting',
   },
-}
+};
 
 export default function Navigation() {
   return (
@@ -38,13 +38,15 @@ export default function Navigation() {
       screenOptions={({ route, navigation }) => ({
         tabBarIcon: ({ color, size, focused }) => {
           if (route.name === 'Pay') {
-            return <PayButton
-              onPress={() => navigation.navigate('Pay')}
-              focused={focused}
-            />
+            return (
+              <PayButton
+                onPress={() => navigation.navigate('Pay')}
+                focused={focused}
+              />
+            );
           }
           const { lib: Icon, name } = icons[route.name];
-          return <Icon name={name} size={size} color={color} />
+          return <Icon name={name} size={size} color={color} />;
         },
       })}
       tabBarOptions={{
@@ -60,38 +62,37 @@ export default function Navigation() {
         name="Home"
         component={HomeScreen}
         options={{
-          title: 'Início'
+          title: 'Início',
         }}
       />
       <Tab.Screen
         name="Wallet"
         component={WalletScreen}
         options={{
-          title: 'Carteira'
+          title: 'Carteira',
         }}
       />
       <Tab.Screen
         name="Pay"
         component={PayScreen}
         options={{
-          title: ''
+          title: '',
         }}
       />
       <Tab.Screen
         name="Notifications"
         component={NotificationsScreen}
         options={{
-          title: 'Notificações'
+          title: 'Notificações',
         }}
       />
       <Tab.Screen
         name="Settings"
         component={SettingsScreen}
         options={{
-          title: 'Ajustes'
+          title: 'Ajustes',
         }}
       />
     </Tab.Navigator>
-
-  )
+  );
 }

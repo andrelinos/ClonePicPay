@@ -11,7 +11,8 @@ export default function Banner() {
         <Title>Cobre um amigo</Title>
 
         <Description>
-          Mantenha suas parcerias em dia, use o PicPay para fazer suas cobranças.
+          Mantenha suas parcerias em dia, use o PicPay para fazer suas
+          cobranças.
         </Description>
       </Details>
       <Img source={img13} />

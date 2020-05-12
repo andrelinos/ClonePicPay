@@ -6,12 +6,12 @@ export const Container = styled.View`
   margin-bottom: 60px;
 `;
 
-export const Card = styled.View `
+export const Card = styled.View`
   flex-direction: row;
   height: 60px;
 `;
 
-export const Title = styled.Text `
+export const Title = styled.Text`
   background: #1e232a;
   width: 100%;
   color: #fff;
@@ -44,7 +44,7 @@ export const Name = styled.Text`
   margin-top: 5px;
 `;
 
-export const Menu = styled.Text `
+export const Menu = styled.Text`
   color: #fff;
   transform: rotate(90deg);
   font-size: 18px;

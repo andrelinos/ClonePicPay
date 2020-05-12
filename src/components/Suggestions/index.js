@@ -53,7 +53,7 @@ export default function Suggestions() {
     <>
       <Title>Sugestões para Você</Title>
       <Container>
-        {items.map((item) => (
+        {items.map(item => (
           <Option key={item.key}>
             <Img source={item.img} />
             <Label>{item.label}</Label>

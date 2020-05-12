@@ -16,7 +16,7 @@ import {
   Green,
   TitleGreen,
   Red,
-  About
+  About,
 } from './styles';
 
 import avatar from '../../assets/avatar.png';
@@ -30,16 +30,12 @@ export default function Settings() {
         <NinkName>@andrelino.silva</NinkName>
         <Name>Andrelino Silva</Name>
         <LinkButton>
-          <LinkProfileText>
-            Ver meu perfil
-          </LinkProfileText>
+          <LinkProfileText>Ver meu perfil</LinkProfileText>
         </LinkButton>
         <MyAccount>Minha conta</MyAccount>
       </Header>
       <ContainerConfig>
-
         <ContainerConfigItems>
-
           <Title>Meu PicPay</Title>
           <Description>@andrelino.silva</Description>
 
@@ -56,16 +52,18 @@ export default function Settings() {
           <Description> </Description>
 
           <Title>Taxas e limites</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Meus endereços</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Meus favoritos</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Validar identidade</Title>
-          <Description><Green>Verificado</Green></Description>
+          <Description>
+            <Green>Verificado</Green>
+          </Description>
 
           <Title>Meu PicPay</Title>
           <Description>@andrelino.silva</Description>
@@ -75,84 +73,78 @@ export default function Settings() {
 
         <ContainerConfigItems>
           <Title>Conta universitária</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Usar código promocional</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Convide seus amigos</Title>
-          <Description></Description>
-
+          <Description />
         </ContainerConfigItems>
 
         <TitleGreen>Minhas assinaturas</TitleGreen>
 
         <ContainerConfigItems>
           <Title>Para estabelecimentos</Title>
-          <Description></Description>
-
+          <Description />
         </ContainerConfigItems>
 
         <TitleGreen>Para o meu negócio</TitleGreen>
 
         <ContainerConfigItems>
-
           <Title>PicPay PRO</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Para estabelecimentos</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Venda por assinaturas</Title>
-          <Description></Description>
-
+          <Description />
         </ContainerConfigItems>
 
         <TitleGreen>Configurações</TitleGreen>
 
         <ContainerConfigItems>
-
           <Title>Usar digital para pagar</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Alterar senha</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Privacidade</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Notificações</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Contas vinculadas</Title>
-          <Description></Description>
-
+          <Description />
         </ContainerConfigItems>
 
         <TitleGreen>Geral</TitleGreen>
 
         <ContainerConfigItems>
-
           <Title>Precisa de ajuda?</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Sobre o PicPay</Title>
-          <Description></Description>
+          <Description />
 
           <Title>Desativar minha conta</Title>
-          <Description></Description>
-
+          <Description />
         </ContainerConfigItems>
 
-        <TitleGreen></TitleGreen>
+        <TitleGreen />
 
         <ContainerConfigItems>
           <LinkButton>
-            <Title><Red>Sair</Red></Title>
+            <Title>
+              <Red>Sair</Red>
+            </Title>
           </LinkButton>
           <About>PicPay para android v.10.18.25</About>
         </ContainerConfigItems>
       </ContainerConfig>
     </Container>
-  )
+  );
 }

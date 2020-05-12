@@ -14,26 +14,27 @@ export const Header = styled.View`
   justify-content: space-between;
 `;
 
-export const Notification = styled.Text `
+export const Notification = styled.Text`
   font-weight: 700;
   color: #fff;
   font-size: 18px;
 `;
 
-export const ConfigButton = styled.TouchableOpacity`
-`;
+export const ConfigButton = styled.TouchableOpacity``;
 
-export const ConfigText = styled.Text `
+export const ConfigText = styled.Text`
   color: #10c86e;
   font-size: 16px;
 `;
 
-export const Card = styled.View `
+export const Cards = styled.View``;
+
+export const Card = styled.View`
   flex-direction: row;
   height: 60px;
 `;
 
-export const Title = styled.Text `
+export const Title = styled.Text`
   background: #1e232a;
   width: 100%;
   color: #fff;
@@ -93,7 +94,7 @@ export const ButtonFollow = styled.TouchableOpacity`
 
 export const ImgFollow = styled.Text``;
 
-export const TextFollow = styled.Text `
+export const TextFollow = styled.Text`
   color: #fff;
   font-size: 11px;
   margin-left: 5px;

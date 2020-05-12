@@ -44,7 +44,7 @@ const items = [
 export default function Tips() {
   return (
     <Container>
-      {items.map((item) => (
+      {items.map(item => (
         <Option key={item.key} bgColor={item.bgColor}>
           <Title>{item.title}</Title>
 

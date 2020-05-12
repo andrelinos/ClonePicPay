@@ -11,11 +11,11 @@ export const Container = styled.ScrollView.attrs(() => ({
   background: #1e222b;
   height: 130px;
   padding-bottom: 10px;
-  border-bottom-width: .5px;
+  border-bottom-width: 0.5px;
   border-color: #999;
 `;
 
-export const Title = styled.Text `
+export const Title = styled.Text`
   width: 100%;
   background: #1e222b;
   color: #fff;

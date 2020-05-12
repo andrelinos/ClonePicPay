@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MaterialCommunityIcons, AntDesign, Feather, } from '@expo/vector-icons';
+import { MaterialCommunityIcons, AntDesign, Feather } from '@expo/vector-icons';
 
 import {
   Wrapper,
@@ -35,7 +35,11 @@ export default function Home() {
     <Wrapper>
       <Container>
         <Header>
-          <MaterialCommunityIcons name="qrcode-scan" size={30} color="#10c86e" />
+          <MaterialCommunityIcons
+            name="qrcode-scan"
+            size={30}
+            color="#10c86e"
+          />
 
           <BalanceContainer>
             <BalanceTitle>Meu saldo</BalanceTitle>
@@ -53,9 +57,7 @@ export default function Home() {
         <PaymentedContainer>
           <PaymentedDescription>
             <PaymentedImg source={img6} resizeMode="contain" />
-            <PaymentedLabel>
-              Você pagou um boleto
-          </PaymentedLabel>
+            <PaymentedLabel>Você pagou um boleto</PaymentedLabel>
           </PaymentedDescription>
           <PaymentedFooter>
             <Details>
@@ -69,7 +71,11 @@ export default function Home() {
 
             <Actions>
               <Option>
-                <MaterialCommunityIcons name="comment-outline" size={14} color="#fff" />
+                <MaterialCommunityIcons
+                  name="comment-outline"
+                  size={14}
+                  color="#fff"
+                />
                 <OptionLabel>0</OptionLabel>
               </Option>
 
@@ -80,7 +86,6 @@ export default function Home() {
             </Actions>
           </PaymentedFooter>
         </PaymentedContainer>
-
       </Container>
     </Wrapper>
   );
